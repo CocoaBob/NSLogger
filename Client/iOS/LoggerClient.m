@@ -2170,6 +2170,10 @@ static void LoggerWriteStreamCallback(CFWriteStreamRef ws, CFStreamEventType eve
 	}
 }
 
+BOOL LoggerIsConnected(Logger *logger) {
+    return logger->connected;
+}
+
 // -----------------------------------------------------------------------------
 #pragma mark -
 #pragma mark Internal encoding functions

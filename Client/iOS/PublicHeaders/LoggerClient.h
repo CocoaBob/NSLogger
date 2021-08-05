@@ -157,6 +157,9 @@ extern Logger* LoggerStart(Logger *logger) NSLOGGER_NOSTRIP;
 // Deactivate and free the logger.
 extern void LoggerStop(Logger *logger) NSLOGGER_NOSTRIP;
 
+// Check if logger is connected
+extern BOOL LoggerIsConnected(Logger *logger) NSLOGGER_NOSTRIP;
+
 // Pause the current thread until all messages from the logger have been transmitted
 // this is useful to use before an assert() aborts your program. If waitForConnection is YES,
 // LoggerFlush() will block even if the client is not currently connected to the desktop
