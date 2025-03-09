@@ -120,6 +120,7 @@ static NSArray *sXcodeFileExtensions = nil;
 	[_logTable setIntercellSpacing:NSMakeSize(0,0)];
 	[_logTable setTarget:self];
 	[_logTable setDoubleAction:@selector(logCellDoubleClicked:)];
+    [_logTable setStyle: NSTableViewStylePlain];
 
 	[_logTable registerForDraggedTypes:@[NSPasteboardTypeString]];
 	[_logTable setDraggingSourceOperationMask:NSDragOperationNone forLocal:YES];
